@@ -1,0 +1,10 @@
+<nav class="topbar">
+  <a routerLink="/dashboard">Dashboard</a> |
+  <a routerLink="/summary">Summary</a> |
+  <a routerLink="/reports">Reports</a>
+  <span style="float:right">
+    <button *ngIf="auth.isLoggedIn()" (click)="logout()">Logout</button>
+  </span>
+</nav>
+<hr />
+<router-outlet></router-outlet>
